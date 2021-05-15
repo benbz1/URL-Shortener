@@ -6,8 +6,9 @@ Features:
 - URL Shortener
 - Privacy Protection - users must register & log in in order to use the shortener and they only have access to their URLs
 - Security Protection - password encryption, user authentication & timed session using the passport, limiting each user to 100 URLs
-- Documentation
 - Run as a Docker container
+- Documentation
+
 
 ## Requirements
 
