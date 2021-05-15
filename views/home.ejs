@@ -1,5 +1,100 @@
-<h1>Welcome to Home Page</h1>
-<title>Home Page</title>
-<li><a href="/register">Sign up!</a></li>
-<li><a href="/login">Log in</a></li>
+<!DOCTYPE html>
+<html>
+<title>URL Shortener</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>URL</b> Shortener</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/register" class="w3-bar-item w3-button">Sign up</a>
+      <a href="/login" class="w3-bar-item w3-button">Log in</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>This is a simple URL shortener tool - it creates short URLs from long ones. We often run into situations where long URLs aren't easy to email, tweet, or otherwise send to others. That is why we created our URL shortener. It takes long URLs as input and give shorter ones in return.
+      In order to use our service, you would need to create an account using your email.
+    </p>
+    <p class="w3-opacity">Every user is limited to 100 URLs in this version of our web application. Our premium version will offer unlimited number of URLs per user so stay tuned for new releases!</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://www.pngkey.com/png/detail/203-2035339_register-user-register-online-icon-png.png" style="width:100%">
+      <h3>Sign Up</h3>
+      <p class="w3-opacity">Step 1</p>
+      <p>Sign up for our service using an email and a password.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="data:image/png;base64,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" alt="Jane" style="width:70%">
+      <h3>Log In</h3>
+      <p class="w3-opacity">Step 2</p>
+      <p>Log in to your account using an email and a password.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://www.computerhope.com/jargon/l/list.jpg" alt="Mike" style="width:63%">
+      <h3>Add URL</h3>
+      <p class="w3-opacity">Step 3</p>
+      <p>Add a long URL to your list and click the shrink button.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://sitechecker.pro/wp-content/uploads/2017/12/URL-meaning.png" alt="Dan" style="width:125%">
+      <h3>Click Short URL</h3>
+      <p class="w3-opacity">Step 4</p>
+      <p>Click the short link to be redirected to the long address.</p>
+    </div>
+  </div>
+
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="https://www.howtogeek.com/wp-content/uploads/2018/06/shutterstock_1006988770.png?width=1200&trim=1,1&bg-color=000&pad=1,1" class="w3-image" style="width:100%">
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Us</h3>
+    <p>We would love to hear your feedback!</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Ben Bar Zvi</p>
+</footer>
+
+</body>
+</html>
