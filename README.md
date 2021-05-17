@@ -13,7 +13,7 @@ Features:
 * Create an account using your email.
 * Log in to your account.
 * Add a new URL and click shrink.
-* **You can click the short url or add the short url string after [https://surl1.herokuapp.com/]** (https://surl1.herokuapp.com/)
+* **You can click the short url or add the short url string after [https://surl1.herokuapp.com/](https://surl1.herokuapp.com/) **
 
 ## Requirements
 
