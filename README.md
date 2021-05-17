@@ -78,6 +78,7 @@ Step 4: Open [http://localhost:49160](http://localhost:49160)
 This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( https://surl1.herokuapp.com).
 
 ## In the future I hope to:
+* Change the Heroku web address to a short custom domain
 * Make a fancier web app
 * Improve the security of the app
 * Create a facility for backing up, mirroring, and/or archiving the URLs
