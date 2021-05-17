@@ -29,6 +29,8 @@ cd URL-Shortener
 npm install
 ```
 
+NOTE: in order to avoid deployment issues locally, I published my .env file temporarily jut to make things easier. **Therefore you can skip step 2**.
+
 Step 2: Create .env file and add values for:
 * SESSION_SECRET
 * CONNECTION_STRING
@@ -49,7 +51,7 @@ This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( htt
 ### Use Docker
 You can also run this app as a Docker container:
 
-NOTE: Don't forget to add the required environment variables SESSION_SECRET and CONNECTION_STRING, the app will not run without them.
+NOTE: since I published the .env file, the application should run successfully without adding any environment variables. If I hadn’t, at this point you would add a .env file or run the container with them. 
 
 Step 1: Clone the repository 
 
