@@ -27,7 +27,7 @@ Step 1: Clone the repository and install the dependencies.
 
 ```bash
 git clone https://github.com/benbz1/URL-Shortener
-cd URL-Shortener
+cd URL-Shortener-master
 ```
 
 ```bash
@@ -49,11 +49,7 @@ npm run devStart
 Step 4: Open [http://localhost:5000](http://localhost:5000).
 
 
-## Deployment 
-This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( https://surl1.herokuapp.com).
-
-
-### Use Docker
+### Alternative: Use Docker 
 You can also run this app as a Docker container:
 
 NOTE: since I published the .env file, the application should run successfully without adding any environment variables. If I hadn’t, at this point you would add a .env file or run the container with them. 
@@ -62,6 +58,7 @@ Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/benbz1/URL-Shortener
+cd URL-Shortener-master
 ```
 
 Step 2: Building your image
@@ -76,6 +73,9 @@ Step 3: Run the image
 docker run -p 49160:5000 -d url-shortener
 ```
 Step 4: Open [http://localhost:49160](http://localhost:49160)
+
+## Deployment 
+This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( https://surl1.herokuapp.com).
 
 ## In the future I hope to:
 * Make a fancier web app
