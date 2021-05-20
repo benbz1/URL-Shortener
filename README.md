@@ -9,6 +9,11 @@ Features:
 - Run as a Docker container
 - Documentation
 
+## How to Use the URL-Shortener:
+* Create an account using your email.
+* Log in to your account.
+* Add a new URL and click shrink.
+* You can click the short url or add the generated string after [https://surl1.herokuapp.com/](https://surl1.herokuapp.com/)
 
 ## Requirements
 
@@ -22,12 +27,14 @@ Step 1: Clone the repository and install the dependencies.
 
 ```bash
 git clone https://github.com/benbz1/URL-Shortener
-cd URL-Shortener
+cd URL-Shortener-master
 ```
 
 ```bash
 npm install
 ```
+
+NOTE: in order to avoid deployment issues locally, I published my .env file temporarily jut to make things easier. **Therefore you can skip step 2**.
 
 Step 2: Create .env file and add values for:
 * SESSION_SECRET
@@ -42,19 +49,16 @@ npm run devStart
 Step 4: Open [http://localhost:5000](http://localhost:5000).
 
 
-## Deployment 
-This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( https://surl1.herokuapp.com).
-
-
-### Use Docker
+### Alternative: Use Docker 
 You can also run this app as a Docker container:
 
-NOTE: Don't forget to add the required environment variables SESSION_SECRET and CONNECTION_STRING, the app will not run without them.
+NOTE: since I published the .env file, the application should run successfully without adding any environment variables. If I hadn’t, at this point you would add a .env file or run the container with them. 
 
 Step 1: Clone the repository 
 
 ```bash
 git clone https://github.com/benbz1/URL-Shortener
+cd URL-Shortener-master
 ```
 
 Step 2: Building your image
@@ -70,7 +74,11 @@ docker run -p 49160:5000 -d url-shortener
 ```
 Step 4: Open [http://localhost:49160](http://localhost:49160)
 
+## Deployment 
+This web app is already deployed on Heroku as [https://surl1.herokuapp.com]( https://surl1.herokuapp.com).
+
 ## In the future I hope to:
+* Change the Heroku web address to a short custom domain
 * Make a fancier web app
 * Improve the security of the app
 * Create a facility for backing up, mirroring, and/or archiving the URLs
